@@ -16,7 +16,7 @@ export default function ListCake() {
               alt="Image"
             />
             <div className="text-center text-fuchsia-500">
-              <label>Cake 001</label>
+              <label>Tiramisu</label>
             </div>
           </div>
           <div className="p-8">
@@ -27,7 +27,7 @@ export default function ListCake() {
               alt="Image"
             />
             <div className="text-center text-fuchsia-500">
-              <label>Cake 002</label>
+              <label>Tiramisu Craquelin choux</label>
             </div>
           </div>
           <div className="p-8">
@@ -82,7 +82,7 @@ export default function ListCake() {
               alt="Image"
             />
             <div className="text-center text-fuchsia-500">
-              <label>Cake 007</label>
+              <label>Lemon choux</label>
             </div>
           </div>
           <div className="p-8">
