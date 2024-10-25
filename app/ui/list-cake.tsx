@@ -7,9 +7,9 @@ export default function ListCake() {
         <div className="text-center text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 text-xl">
           <p>Menu</p>
         </div>
-        <div className="grid grid-cols-4 justify-items-center m-3">
+        <div className="md:grid md:grid-cols-4 md:justify-items-center md:m-3">
           <div className="p-8">
-            <Image className="w-[18vw] h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500"
+            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
               src="/cake1.png"
               width={500}
               height={2}
@@ -20,7 +20,7 @@ export default function ListCake() {
             </div>
           </div>
           <div className="p-8">
-            <Image className="w-[18vw] h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500"
+            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
               src="/cake2.png"
               width={500}
               height={2}
@@ -31,7 +31,7 @@ export default function ListCake() {
             </div>
           </div>
           <div className="p-8">
-            <Image className="w-[18vw] h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500"
+            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
               src="/cake3.png"
               width={500}
               height={2}
@@ -42,7 +42,7 @@ export default function ListCake() {
             </div>
           </div>
           <div className="p-8">
-            <Image className="w-[18vw] h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500"
+            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
               src="/cake4.png"
               width={500}
               height={2}
@@ -53,7 +53,7 @@ export default function ListCake() {
             </div>
           </div>
           <div className="p-8">
-            <Image className="w-[18vw] h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500"
+            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
               src="/cake5.png"
               width={500}
               height={2}
@@ -64,7 +64,7 @@ export default function ListCake() {
             </div>
           </div>
           <div className="p-8">
-            <Image className="w-[18vw] h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500"
+            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
               src="/cake6.png"
               width={500}
               height={2}
@@ -75,7 +75,7 @@ export default function ListCake() {
             </div>
           </div>
           <div className="p-8">
-            <Image className="w-[18vw] h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500"
+            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
               src="/cake7.png"
               width={500}
               height={2}
@@ -86,7 +86,7 @@ export default function ListCake() {
             </div>
           </div>
           <div className="p-8">
-            <Image className="w-[18vw] h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500"
+            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
               src="/cake8.png"
               width={500}
               height={2}

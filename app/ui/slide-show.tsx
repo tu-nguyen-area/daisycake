@@ -17,7 +17,7 @@ export default function SlideShow() {
   return (
     <>
     <div>
-      <div className="flex justify-center pb-12">
+      <div className="hidden sm:flex justify-center pb-12">
         <div className="content-center">
           <button onClick={preImage} className="rounded-l-full bg-violet-500 text-xl text-white w-32 h-10">Previous</button>
         </div>

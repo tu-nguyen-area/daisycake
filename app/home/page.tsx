@@ -19,13 +19,13 @@ export default function Page() {
       <main>
         <div>
 
-          <section>
-            <div className=" flex justify-center bg-gradient-to-r from-purple-500 to-pink-500 p-1 text-white text-xl">
+          <section className="">
+            <div className="flex justify-center bg-gradient-to-r from-purple-500 to-pink-500 p-1 text-white text-xl">
               <p>Best Selling</p>
             </div>
-            <div className="flex justify-around pb-12">
-              <div className="w-80 h-64">
-                <Image className="rounded-xl w-80 h-64 border-4 rounded-xl border-x-fuchsia-500 border-y-fuchsia-500"
+            <div className="flex flex-col md:flex-row justify-around justify-center pb-12 items-center">
+              <div className="">
+                <Image className="rounded-xl w-80 h-64 border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
                   src="/cake1.png"
                   width={300}
                   height={0}
@@ -36,7 +36,7 @@ export default function Page() {
                 </div>
               </div>
               <div>
-                <Image className="rounded-xl w-80 h-64 border-4 rounded-xl border-x-fuchsia-500 border-y-fuchsia-500"
+                <Image className="rounded-xl w-80 h-64 border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
                   src="/cake2.png"
                   width={300}
                   height={0}
@@ -47,7 +47,7 @@ export default function Page() {
                 </div>
               </div>
               <div>
-                <Image className="rounded-xl w-80 h-64 border-4 rounded-xl border-x-fuchsia-500 border-y-fuchsia-500"
+                <Image className="rounded-xl w-80 h-64 border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
                   src="/cake3.png"
                   width={300}
                   height={0}
@@ -61,12 +61,12 @@ export default function Page() {
           </section>
 
           <section>
-            <div className=" flex justify-center bg-gradient-to-r from-purple-500 to-pink-500 p-1 text-white text-xl">
+            <div className="flex justify-center bg-gradient-to-r from-purple-500 to-pink-500 p-1 text-white text-xl">
               <p>Most Liked</p>
             </div>
-            <div className="grid grid-cols-3 gap-1 justify-items-center pb-12">
+            <div className="flex flex-col md:flex-row justify-around justify-center pb-12 items-center">
               <div className="">
-                <Image className="rounded-xl w-80 h-64 border-4 rounded-xl border-x-fuchsia-500 border-y-fuchsia-500"
+                <Image className="rounded-xl w-80 h-64 border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
                   src="/cake4.png"
                   width={300}
                   height={0}
@@ -77,7 +77,7 @@ export default function Page() {
                 </div>
               </div>
               <div>
-                <Image className="rounded-xl w-80 h-64 border-4 rounded-xl border-x-fuchsia-500 border-y-fuchsia-500"
+                <Image className="rounded-xl w-80 h-64 border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
                   src="/cake5.png"
                   width={300}
                   height={0}
@@ -88,7 +88,7 @@ export default function Page() {
                 </div>
               </div>
               <div>
-                <Image className="rounded-xl w-80 h-64 border-4 rounded-xl border-x-fuchsia-500 border-y-fuchsia-500"
+                <Image className="rounded-xl w-80 h-64 border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
                   src="/cake6.png"
                   width={300}
                   height={0}
@@ -105,9 +105,9 @@ export default function Page() {
             <div className=" flex justify-center bg-gradient-to-r from-purple-500 to-pink-500 p-1 text-white text-xl">
               <p>Recommended</p>
             </div>
-            <div className="grid grid-cols-3 gap-1 justify-items-center pb-12">
+            <div className="flex flex-col md:flex-row justify-around justify-center pb-12 items-center">
               <div>
-                <Image className="rounded-xl w-80 h-64 border-4 rounded-xl border-x-fuchsia-500 border-y-fuchsia-500"
+                <Image className="rounded-xl w-80 h-64 border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
                   src="/cake1.png"
                   width={300}
                   height={0}
@@ -118,7 +118,7 @@ export default function Page() {
                 </div>
               </div>
               <div>
-                <Image className="rounded-xl w-80 h-64 border-4 rounded-xl border-x-fuchsia-500 border-y-fuchsia-500"
+                <Image className="rounded-xl w-80 h-64 border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
                   src="/cake2.png"
                   width={300}
                   height={0}
@@ -129,7 +129,7 @@ export default function Page() {
                 </div>
               </div>
               <div>
-                <Image className="rounded-xl w-80 h-64 border-4 rounded-xl border-x-fuchsia-500 border-y-fuchsia-500"
+                <Image className="rounded-xl w-80 h-64 border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
                   src="/cake3.png"
                   width={300}
                   height={0}
