@@ -6,9 +6,9 @@ export default function Header() {
       <div>
         <header>
           <div className="flex flex-row justify-between text-white">
-            <p>Cake by Daisy</p>
-            <p>cakestore@email.com</p>
-            <Link href="/signin">Sign in</Link>
+            <Link href="https://www.facebook.com/people/Cake-by-Daisy/100091791484158/">FB: Cake by Daisy</Link>
+            <Link href="https://www.facebook.com/tranghy7199">FB: Homemade Baker</Link>
+            <Link href="/">Sign in</Link>
           </div>
         </header>
       </div>
