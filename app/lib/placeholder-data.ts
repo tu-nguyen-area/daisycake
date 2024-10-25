@@ -1,19 +1,3 @@
-const bgImage = [
-  {
-    id: '1',
-    name: 'Background1',
-    url: '/bg1.png',
-  },
-];
-
-const cakeImage = [
-  {
-    id: '1',
-    name: 'Cake1',
-    url: '/cake1.png',
-  },
-];
-
 export const clImage = [
   { 
     id: '1',

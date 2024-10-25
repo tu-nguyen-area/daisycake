@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function SlideLine() {
   const products = [ ...clImage, ...clImage, ...clImage, ...clImage, ...clImage, ...clImage, ...clImage, ...clImage, ...clImage];
 
-  return products.map((image, i) => {
+  return products.map((image) => {
 
   return(
     <>
@@ -12,7 +12,7 @@ export default function SlideLine() {
         src={image.url}
         width={200}
         height={0}
-        alt={`${products.name} image`}
+        alt={`${image.name} image`}
       />
     </>
   )})

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import SideNav from '@/app/ui/side-nav';
 import Header from '@/app/ui/header';
