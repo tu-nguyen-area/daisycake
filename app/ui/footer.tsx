@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import styles from '@/app/utils/footer.module.css';
 
 export default function Footer() {
   return (
     <>
-      <div className="flex justify-center bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white p-6">
+
+      <div className={`${styles.footerFlex} ${styles.footerText} ${styles.footerPadding} ${styles.footerGradient}`}>
         <footer>
           <div>
             <p>Call: +84 384 216 280 |
@@ -16,6 +18,7 @@ export default function Footer() {
           </div>
         </footer>
       </div>
+
     </>
   );
 }

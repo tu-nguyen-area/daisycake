@@ -1,0 +1,16 @@
+.footerGradient {
+  background-image: linear-gradient(to right, rgba(250, 139, 255, 1), rgba(43, 210, 255, 1), rgba(43, 255, 136, 1));
+}
+
+.footerFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.footerText {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footerPadding {
+  padding: 24px;
+}
