@@ -1,47 +1,80 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
+import { wrap } from 'popmotion';
+import { images } from '@/app/lib/placeholder-data';
+import styles from '@/app/utils/slide-show.module.css';
+
+const variants = {
+  enter: (direction: number) => {
+    return {
+      x: direction > 0 ? 1000 : -1000,
+      opacity: 0
+    };
+  },
+  center: {
+    zIndex: 1,
+    x: 0,
+    opacity: 1
+  },
+  exit: (direction: number) => {
+    return {
+      zIndex: 0,
+      x: direction < 0 ? 1000 : -1000,
+      opacity: 0
+    };
+  }
+};
+
+const swipeConfidenceThreshold = 10000;
+const swipePower = (offset: number, velocity: number) => {
+  return Math.abs(offset) * velocity;
+};
 
 export default function SlideShow() {
-  const [url, setUrl] = useState('/bg1.png');
-
-  function preImage() {
-    setUrl('/bg1.png');
-  }
-
-  function nextImage() {
-    setUrl('/bg2.png');
-  }
+  const [[page, direction], setPage] = useState([0, 0]);
+  const imageIndex = wrap(0, images.length, page);
+  const paginate = (newDirection: number) => {
+    setPage([page + newDirection, newDirection]);
+  };
 
   return (
-    <>
-    <div>
-      <div className="hidden sm:flex justify-center pb-12">
-        <div className="content-center">
-          <button onClick={preImage} className="rounded-l-full bg-violet-500 text-xl text-white w-32 h-10">Previous</button>
-        </div>
-        <div className="">
-          <div className="">
-            <div className="">
-              <Image key={url} className="rounded-xl animate-fadeIn h-[85vh] w-[75vw]"
-                src={url}
-                width={1200}
-                height={500}
-                alt="homecake"
-                priority={false}
-                placeholder="blur"
-                blurDataURL={url}
-                loading = 'lazy'
-              />
-            </div>
-          </div>
-        </div>
-        <div className="content-center">
-          <button onClick={nextImage} className="rounded-r-full bg-fuchsia-500 text-xl text-white w-32 h-10">Next</button>
-        </div>
+    <><div className={`${styles.container} ${styles.body}`}>
+      <AnimatePresence initial={false} custom={direction}>
+        <motion.img
+          key={page}
+          src={images[imageIndex]}
+          custom={direction}
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          transition={{
+            x: { type: "spring", stiffness: 300, damping: 30 },
+            opacity: { duration: 0.2 }
+          }}
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={1}
+          onDragEnd={(e, { offset, velocity }) => {
+            const swipe = swipePower(offset.x, velocity.x);
+
+            if (swipe < -swipeConfidenceThreshold) {
+              paginate(1);
+            } else if (swipe > swipeConfidenceThreshold) {
+              paginate(-1);
+            }
+          }}
+        />
+      </AnimatePresence>
+      <div className={`${styles.next}`} onClick={() => paginate(1)}>
+        {"‣"}
       </div>
-    </div>
+      <div className={`${styles.prev}`} onClick={() => paginate(-1)}>
+        {"‣"}
+      </div>
+      </div>
     </>
   );
 }

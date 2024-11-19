@@ -35,3 +35,14 @@ export const clImage = [
     url: '/cakeline7.png',
   },
 ];
+
+export const images = [
+    '/bg1.png',
+    '/cakeline1.png',
+    '/cakeline2.png',
+    '/cakeline3.png',
+    '/cakeline4.png',
+    '/cakeline5.png',
+    '/cakeline6.png',
+    '/cakeline7.png',
+];

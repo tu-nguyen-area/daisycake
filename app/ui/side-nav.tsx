@@ -3,10 +3,6 @@ import Link from 'next/link';
 const links = [
   { name: 'Home', href: '/home' },
   { name: 'Cake', href: '/cake' },
-  { name: 'Order', href: '/' },
-  { name: 'Contact', href: '/' },
-  { name: 'Support', href: '/' },
-  { name: 'About', href: '/' },
 ];
 
 export default function SideNav() {
