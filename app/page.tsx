@@ -153,6 +153,12 @@ export default function Page() {
           <div className="flex animate-slip">
             <SlideLine />
           </div>
+          <div className="flex animate-sliprev">
+            <SlideLine />
+          </div>
+          <div className="flex animate-slipslow">
+            <SlideLine />
+          </div>
         </section>
 
         <section>
