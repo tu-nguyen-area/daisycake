@@ -1,6 +1,17 @@
 import Image from 'next/image';
 
 export default function ListCake() {
+  const listCake = [
+    { id: 1, src: "/cake1.png", code: "Tiramisu" },
+    { id: 2, src: "/cake2.png", code: "Tiramisu Craquelin choux" },
+    { id: 3, src: "/cake3.png", code: "Velvet" },
+    { id: 4, src: "/cake4.png", code: "Berry mango sponge" },
+    { id: 5, src: "/cake5.png", code: "bento cake" },
+    { id: 6, src: "/cake6.png", code: "Salted egg sponge" },
+    { id: 7, src: "/cake7.png", code: "Lemon choux" },
+    { id: 8, src: "/cake8.png", code: "Overmade" }
+  ];
+
   return (
     <>
       <div>
@@ -8,94 +19,22 @@ export default function ListCake() {
           <p>Menu</p>
         </div>
         <div className="md:grid md:grid-cols-4 md:justify-items-center md:m-3">
-          <div className="p-8">
-            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
-              src="/cake1.png"
-              width={500}
-              height={2}
-              alt="Image"
-            />
-            <div className="text-center text-fuchsia-500">
-              <label>Tiramisu</label>
-            </div>
+          {listCake.map((lcake) => {
+            return (
+              <div key={lcake.id} className="m-6 rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all">
+                <Image className="sm:w-[30dvw] sm:h-[35dvh] border-2 border-x-fuchsia-500 border-y-fuchsia-500"
+                  src={lcake.src}
+                  width={500}
+                  height={2}
+                  alt="Image"
+                />
+              <div className="text-center text-fuchsia-500">
+                <label>{lcake.code}</label>
+              </div>
           </div>
-          <div className="p-8">
-            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
-              src="/cake2.png"
-              width={500}
-              height={2}
-              alt="Image"
-            />
-            <div className="text-center text-fuchsia-500">
-              <label>Tiramisu Craquelin choux</label>
-            </div>
-          </div>
-          <div className="p-8">
-            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
-              src="/cake3.png"
-              width={500}
-              height={2}
-              alt="Image"
-            />
-            <div className="text-center text-fuchsia-500">
-              <label>Cake 003</label>
-            </div>
-          </div>
-          <div className="p-8">
-            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
-              src="/cake4.png"
-              width={500}
-              height={2}
-              alt="Image"
-            />
-            <div className="text-center text-fuchsia-500">
-              <label>Cake 004</label>
-            </div>
-          </div>
-          <div className="p-8">
-            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
-              src="/cake5.png"
-              width={500}
-              height={2}
-              alt="Image"
-            />
-            <div className="text-center text-fuchsia-500">
-              <label>Cake 005</label>
-            </div>
-          </div>
-          <div className="p-8">
-            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
-              src="/cake6.png"
-              width={500}
-              height={2}
-              alt="Image"
-            />
-            <div className="text-center text-fuchsia-500">
-              <label>Cake 006</label>
-            </div>
-          </div>
-          <div className="p-8">
-            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
-              src="/cake7.png"
-              width={500}
-              height={2}
-              alt="Image"
-            />
-            <div className="text-center text-fuchsia-500">
-              <label>Lemon choux</label>
-            </div>
-          </div>
-          <div className="p-8">
-            <Image className="md:w-[18vw] md:h-[30vh] rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all"
-              src="/cake8.png"
-              width={500}
-              height={2}
-              alt="Image"
-            />
-            <div className="text-center text-fuchsia-500">
-              <label>Cake 008</label>
-            </div>
-          </div>
+            );
+          })}
+
         </div>
       </div>
     </>

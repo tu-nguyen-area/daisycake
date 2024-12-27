@@ -18,8 +18,8 @@ importers:
         specifier: ^18.20.5
         version: 18.20.5
       pnpm:
-        specifier: ^9.13.2
-        version: 9.13.2
+        specifier: ^9.15.1
+        version: 9.15.1
       popmotion:
         specifier: ^11.0.5
         version: 11.0.5
@@ -1320,8 +1320,8 @@ packages:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
 
-  pnpm@9.13.2:
-    resolution: {integrity: sha512-iMnDhkRQNQ5lozWHq4Aaz5RtfIFO0RNNpKkk9t9aISD9NrRqq2j3zR1BMUkRLVPH2zpBNmJM/QD/GEagxs70ig==}
+  pnpm@9.15.1:
+    resolution: {integrity: sha512-GstWXmGT7769p3JwKVBGkVDPErzHZCYudYfnHRncmKQj3/lTblfqRMSb33kP9pToPCe+X6oj1n4MAztYO+S/zw==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -3097,7 +3097,7 @@ snapshots:
 
   pirates@4.0.6: {}
 
-  pnpm@9.13.2: {}
+  pnpm@9.15.1: {}
 
   popmotion@11.0.5:
     dependencies:
