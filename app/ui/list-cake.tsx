@@ -3,10 +3,10 @@ import Image from 'next/image';
 export default function ListCake() {
   const listCake = [
     { id: 1, src: "/cake1.png", code: "Tiramisu" },
-    { id: 2, src: "/cake2.png", code: "Tiramisu Craquelin choux" },
+    { id: 2, src: "/cake2.png", code: "Tiramisu craquelin choux" },
     { id: 3, src: "/cake3.png", code: "Velvet" },
     { id: 4, src: "/cake4.png", code: "Berry mango sponge" },
-    { id: 5, src: "/cake5.png", code: "bento cake" },
+    { id: 5, src: "/cake5.png", code: "Bento cake" },
     { id: 6, src: "/cake6.png", code: "Salted egg sponge" },
     { id: 7, src: "/cake7.png", code: "Lemon choux" },
     { id: 8, src: "/cake8.png", code: "Overmade" }

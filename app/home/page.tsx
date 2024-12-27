@@ -7,15 +7,15 @@ import Footer from '@/app/ui/footer';
 
 export default function Page() {
   const cakeB = [
-    { id: 1, src: "/cake1.png", code: "Cake 001" },
-    { id: 2, src: "/cake2.png", code: "Cake 002" },
-    { id: 3, src: "/cake3.png", code: "Cake 003" }
+    { id: 1, src: "/cake1.png", code: "Tiramisu" },
+    { id: 2, src: "/cake2.png", code: "Tiramisu craquelin choux" },
+    { id: 3, src: "/cake3.png", code: "Velvet" }
   ];
 
   const cakeL = [
-    { id: 4, src: "/cake4.png", code: "Cake 004" },
-    { id: 5, src: "/cake5.png", code: "Cake 005" },
-    { id: 6, src: "/cake6.png", code: "Cake 006" }
+    { id: 4, src: "/cake4.png", code: "Berry mango sponge" },
+    { id: 5, src: "/cake5.png", code: "Bento cake" },
+    { id: 6, src: "/cake6.png", code: "Salted egg sponge" }
   ];
 
   return (
