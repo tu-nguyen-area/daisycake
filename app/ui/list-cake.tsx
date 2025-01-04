@@ -22,7 +22,7 @@ export default function ListCake() {
           {listCake.map((lcake) => {
             return (
               <div key={lcake.id} className="m-6 rounded-xl border-4 border-x-fuchsia-500 border-y-fuchsia-500 hover:md:scale-110 transition-all">
-                <Image className="sm:w-[30dvw] sm:h-[35dvh] border-2 border-x-fuchsia-500 border-y-fuchsia-500"
+                <Image className="w-80 h-64 border-2 border-x-fuchsia-500 border-y-fuchsia-500"
                   src={lcake.src}
                   width={500}
                   height={2}
