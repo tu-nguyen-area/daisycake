@@ -31,7 +31,7 @@ export default function Page() {
         <div>
 
           <section className="">
-            <div className="flex justify-center bg-gradient-to-r from-purple-500 to-pink-500 p-1 text-white text-xl">
+            <div className="flex justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-1 text-white text-xl">
               <p>Best Selling</p>
             </div>
             <div className="flex flex-col md:flex-row justify-around justify-center pb-12 items-center">
@@ -54,7 +54,7 @@ export default function Page() {
           </section>
 
           <section>
-            <div className="flex justify-center bg-gradient-to-r from-purple-500 to-pink-500 p-1 text-white text-xl">
+            <div className="flex justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-1 text-white text-xl">
               <p>Most Liked</p>
             </div>
             <div className="flex flex-col md:flex-row justify-around justify-center pb-12 items-center">
@@ -77,7 +77,7 @@ export default function Page() {
           </section>
 
           <section>
-            <div className="flex justify-center bg-gradient-to-r from-purple-500 to-pink-500 p-1 text-white text-xl">
+            <div className="flex justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-1 text-white text-xl">
               <p>Recommended</p>
             </div>
             <div className="flex flex-col md:flex-row justify-around justify-center pb-12 items-center">
@@ -104,7 +104,7 @@ export default function Page() {
 
       <div>
         <section>
-          <div className=" flex justify-center bg-gradient-to-r from-purple-500 to-pink-500 p-1 text-white text-xl">
+          <div className=" flex justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-1 text-white text-xl">
             <p>Menu</p>
           </div>
           <div className="flex animate-slip">
