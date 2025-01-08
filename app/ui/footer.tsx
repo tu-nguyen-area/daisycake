@@ -14,7 +14,7 @@ export default function Footer() {
               <Link href="https://www.facebook.com/tranghy7199"> Homemade Baker</Link>
             </p>
             <p>Privacy Policy | Terms of Use | Sales and Refunds</p>
-            <p>&copy; 2024 Cake by Daisy. All rights reserved.</p>
+            <p>&copy; 2025 Cake by Daisy. All rights reserved.</p>
           </div>
         </footer>
       </div>
