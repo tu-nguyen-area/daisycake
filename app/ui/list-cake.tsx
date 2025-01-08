@@ -15,7 +15,7 @@ export default function ListCake() {
   return (
     <>
       <div>
-        <div className="text-center text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 text-xl">
+        <div className="text-center text-white text-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
           <p>Menu</p>
         </div>
         <div className="md:grid md:grid-cols-4 md:justify-items-center md:m-3">
