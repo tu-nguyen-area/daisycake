@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import SideNav from '@/app/ui/side-nav';
+import BarNav from '@/app/ui/bar-nav';
 import Header from '@/app/ui/header';
 import SlideLine from '@/app/ui/slide-line';
 import SlideShow from '@/app/ui/slide-show';
@@ -23,13 +23,12 @@ export default function Page() {
 
       <div>
         <Header />
-        <SideNav />
+        <BarNav />
         <SlideShow />
       </div>
 
       <main>
         <div>
-
           <section className="">
             <div className="flex justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-1 text-white text-xl">
               <p>Best Selling</p>

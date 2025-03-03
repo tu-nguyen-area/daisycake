@@ -1,5 +1,5 @@
 import Header from '@/app/ui/header';
-import SideNav from '@/app/ui/side-nav';
+import BarNav from '@/app/ui/bar-nav';
 import Footer from '@/app/ui/footer';
 
 export default function Page() {
@@ -8,7 +8,7 @@ export default function Page() {
 
       <div>
         <Header />
-        <SideNav />
+        <BarNav />
       </div>
 
       <div>

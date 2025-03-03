@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import SideNav from '@/app/ui/side-nav';
+import BarNav from '@/app/ui/bar-nav';
 import Header from '@/app/ui/header';
 import SlideLine from '@/app/ui/slide-line';
 import SlideShow from '@/app/ui/slide-show';
@@ -23,7 +23,7 @@ export default function Page() {
 
       <div>
         <Header />
-        <SideNav />
+        <BarNav />
         <SlideShow />
       </div>
 

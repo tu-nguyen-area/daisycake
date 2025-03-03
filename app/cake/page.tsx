@@ -1,4 +1,4 @@
-import SideNav from '@/app/ui/side-nav';
+import BarNav from '@/app/ui/bar-nav';
 import Header from '@/app/ui/header';
 import ListCake from '@/app/ui/list-cake';
 import Footer from '@/app/ui/footer';
@@ -8,22 +8,22 @@ export default function Page() {
   return (
     <>
 
+    <div>
+      <Header />
+      <BarNav />
+    </div>
+    <div className="pt-12 flex animate-slip">
+      <SlideLine />
+    </div>
+    <div>
       <div>
-        <Header />
-        <SideNav />
+        <ListCake />
       </div>
-      <div className="flex animate-slip">
-        <SlideLine />
-      </div>
-      <div>
-        <div>
-          <ListCake />
-        </div>
-      </div>
+    </div>
 
-      <div>
-        <Footer />
-      </div>
+    <div>
+      <Footer />
+    </div>
 
     </>
   );

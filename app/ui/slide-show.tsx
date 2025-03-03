@@ -40,7 +40,8 @@ export default function SlideShow() {
   };
 
   return (
-    <><div className={`${styles.container} ${styles.body}`}>
+    <>
+    <div className={`${styles.container} ${styles.body}`}>
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={page}
