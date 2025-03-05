@@ -67,7 +67,7 @@ export default function Page() {
                       height={2}
                       alt={cake.code}
                     />
-                    <div className="text-center text-fuchsia-500">
+                    <div className="text-center text-fuchsia-500 dark:text-white">
                       <label>{cake.code}</label>
                     </div>
                   </div>
@@ -90,7 +90,7 @@ export default function Page() {
                       height={2}
                       alt={cake.code}
                     />
-                    <div className="text-center text-fuchsia-500">
+                    <div className="text-center text-fuchsia-500 dark:text-white">
                       <label>{cake.code}</label>
                     </div>
                   </div>
