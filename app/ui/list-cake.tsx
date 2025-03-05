@@ -28,7 +28,7 @@ export default function ListCake() {
                   height={2}
                   alt="Image"
                 />
-              <div className="text-center text-fuchsia-500">
+              <div className="text-center text-fuchsia-500 dark:text-white">
                 <label>{lcake.code}</label>
               </div>
           </div>
