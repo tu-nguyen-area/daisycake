@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description: "Cake by Daisy",
 };
 
+export const runtime = 'edge';
+
 export default function RootLayout({
   children,
 }: Readonly<{
