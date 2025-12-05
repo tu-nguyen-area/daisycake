@@ -1,0 +1,34 @@
+.gradientColor {
+  background-image: linear-gradient(to right, rgba(250, 139, 255, 1), rgba(43, 210, 255, 1), rgba(43, 255, 136, 1));
+}
+
+.color:hover {
+  background-image: linear-gradient(to right, rgba(250, 139, 255, 1), rgba(43, 210, 255, 1), rgba(43, 255, 136, 1));
+}
+
+@keyframes slip {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes sliprev {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes slipslow {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.slideSlip {
+  animation: slip 20s linear infinite;
+}
+
+.slideSliprev {
+  animation: sliprev 25s linear infinite;
+}
+
+.slideSlipSlow {
+  animation: slipslow 50s linear infinite;
+}
